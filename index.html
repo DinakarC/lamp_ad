@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left">
+        <nav class="navbar">
+            <img src="images/menu.png" class="menu-img">
+            <img src="images/logo.png" class="logo-img">
+            <ul>
+                <li><a href="" id="main">Home</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <button class="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-img">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" alt="" class="light" id="light">
+        </div>
+        <div class="txt" id="text">
+            <h2>For your better tomorrow,</h2>
+            <h2 class="h"> save energy today.</h2>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById("btn");
+        var light =document.getElementById("light");
+        var txt = document.getElementById("text");
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+            txt.classList.toggle("appear")
+        }
+    </script>
+</body>
+</html>

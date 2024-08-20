@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.left{
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 3%;
+}
+.menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+} 
+.logo-img{
+    width: 160px;
+    margin-right: 20px;
+    cursor: pointer; 
+}
+.navbar ul{
+    flex: 1;
+    text-align: right;
+}
+.navbar ul li{
+    display: inline-block; 
+    list-style: none;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: 0.5s;
+}
+.lamp{
+    position: absolute;
+    top: 0;
+    left: 24%;
+    width: 150px;
+}
+.light{
+    position: absolute;
+    width: 500px;
+    top: 36%;
+    left: 185px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.txt{
+    color: #f90000;
+    text-shadow: 1px 2px 8px white;
+    max-width: 600px;
+    margin-top: 320px;
+    margin-left: 300px;
+    font-size: 17px;
+    opacity: 0;
+}
+.h{
+    margin-left: 40px;
+}
+.active{
+    background: green;
+}
+.active span{
+    background: rgb(255, 255, 255);
+    margin-left: 31px;
+}
+.on{
+    opacity: 1;
+}
+.appear{
+    transition: .1s ease;
+    opacity: 1;
+}
+#main{
+    
+}
